@@ -31,7 +31,7 @@
             <TextBlock Grid.Row="0" x:Name="textBlock" Margin="0,0,0,1.833" TextWrapping="Wrap" Text="Add Event" FontSize="48" FontFamily="Bradley Hand ITC" TextAlignment="Center"/>
             <TextBox x:Name="titlebox" Margin="20,15" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Bradley Hand ITC" FontSize="24" Foreground="#FFBAD31E" Background="#FFF3F9F3" PlaceholderText="Title"/>
             <TextBox x:Name="descbox" Margin="20,14.5,20,15.333" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" FontFamily="Bradley Hand ITC" FontSize="24" Foreground="#FFDAD680" PlaceholderText="Description(Optional)"/>
-            <DatePicker x:Name="evdatepicker" Margin="20,14.667,211,15.167" Grid.Row="4" FontSize="24" FontFamily="Bradley Hand ITC" BorderThickness="2" Foreground="#FFDCD64C" Background="#FF930EF0"/>
+            <DatePicker x:Name="evdatepicker" Margin="20,14.667,211,15.167" Grid.Row="4" FontSize="24" FontFamily="Bradley Hand ITC" BorderThickness="2" Foreground="#FFF9F9ED"/>
             <TimePicker x:Name="evtimepicker" Margin="190,14.667,41,15.167" Grid.Row="4" Background="#FF36199B" Foreground="White" ClockIdentifier="12HourClock" Time="0"/>
             <TextBlock x:Name="textBlock1" Margin="20,25,226,15" Grid.Row="6" TextWrapping="Wrap" Text="Repeat" FontSize="24" FontFamily="Bradley Hand ITC"/>
             <ComboBox x:Name="repeatcombobox" Margin="119,15,20,10" Grid.Row="6" PlaceholderText="Choose Repeat Type" SelectionChanged="repeatcombobox_SelectionChanged" FontFamily="Bradley Hand ITC"/>
