@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Karya.WinPhone.InEventPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="titletextblock" Margin="30,50,30,5" TextWrapping="Wrap" Text="" FontSize="24" TextAlignment="Center"/>
+        <TextBlock x:Name="desctextblock" Margin="30,10" Grid.Row="1" TextWrapping="Wrap" Text="" TextAlignment="Center" FontSize="24"/>
+        <TextBlock x:Name="dateblock" Margin="30,19.667,257,20" Grid.Row="2" TextWrapping="Wrap" Text="" FontSize="24"/>
+        <TextBlock x:Name="timeblock" Margin="215,19.667,69,20" Grid.Row="2" TextWrapping="Wrap" Text="" FontSize="24"/>
+        <TextBlock x:Name="repeattextblock" Margin="30,10" Grid.Row="3" TextWrapping="Wrap" Text="Repeat:" FontSize="24" FontFamily="Bradley Hand ITC"/>
+        <TextBlock x:Name="subtextblock" Margin="30,10" Grid.Row="4" TextWrapping="Wrap" Text="Subject Group:" FontSize="24" FontFamily="Bradley Hand ITC"/>
+        <Button x:ConnectionId='1' x:Name="delbutton" Content="Delete" HorizontalAlignment="Stretch" Margin="148,27,143,0" Grid.Row="5" VerticalAlignment="Top"                        />
+
+    </Grid>
+</Page>
+

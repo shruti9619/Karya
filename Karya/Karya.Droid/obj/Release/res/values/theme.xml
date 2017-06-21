@@ -1,0 +1,1 @@
+<resources><style name="Theme.Custom" parent="@android:style/Theme.Black.NoTitleBar"><item name="android:colorControlActivated">#ffffffff</item></style></resources>

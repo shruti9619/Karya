@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Karya.WinPhone.AddEventpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <Grid Name="maingrid" Margin="30">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" x:Name="textBlock" Margin="0,0,0,1.833" TextWrapping="Wrap" Text="Add Event" FontSize="48" FontFamily="Bradley Hand ITC" TextAlignment="Center"/>
+            <TextBox x:Name="titlebox" Margin="20,15" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Bradley Hand ITC" FontSize="24" Foreground="#FFBAD31E" Background="#FFF3F9F3" PlaceholderText="Title"/>
+            <TextBox x:Name="descbox" Margin="20,14.5,20,15.333" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" FontFamily="Bradley Hand ITC" FontSize="24" Foreground="#FFDAD680" PlaceholderText="Description(Optional)"/>
+            <DatePicker x:Name="evdatepicker" Margin="20,14.667,211,15.167" Grid.Row="4" FontSize="24" FontFamily="Bradley Hand ITC" BorderThickness="2" Foreground="#FFDCD64C" Background="#FF930EF0"/>
+            <TimePicker x:Name="evtimepicker" Margin="190,14.667,41,15.167" Grid.Row="4" Background="#FF36199B" Foreground="White" ClockIdentifier="12HourClock" Time="0"/>
+            <TextBlock x:Name="textBlock1" Margin="20,25,226,15" Grid.Row="6" TextWrapping="Wrap" Text="Repeat" FontSize="24" FontFamily="Bradley Hand ITC"/>
+            <ComboBox x:ConnectionId='1' x:Name="repeatcombobox" Margin="119,15,20,10" Grid.Row="6" PlaceholderText="Choose Repeat Type"                                                    FontFamily="Bradley Hand ITC"/>
+            <ComboBox x:Name="subjectcombobox" Margin="20,10,20,15" Grid.Row="5" FontFamily="Bradley Hand ITC" PlaceholderText="Connect a Subject to this event"/>
+            <Button x:ConnectionId='2' x:Name="savebutton" Content="Save" HorizontalAlignment="Stretch" Margin="20,0" Grid.Row="8" VerticalAlignment="Stretch" Foreground="#FF0C0B0B" BorderBrush="{x:Null}" FontFamily="Bradley Hand ITC" FontSize="24"                         >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+                </Button.Background>
+            </Button>
+            <TextBox x:Name="numtextbox" Margin="20,15" Grid.Row="7" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" PlaceholderText="Repeat after how many hours" Visibility="Collapsed"/>
+            <Grid Name="gdays" Visibility="Collapsed" Margin="10,3.167,0,9.833" Grid.Row="2" Grid.RowSpan="6">
+                <Grid.Background>
+                    <ImageBrush Stretch="None" ImageSource="Assets/Board45.png"/>
+                </Grid.Background>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+

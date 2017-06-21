@@ -1,0 +1,16 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\shrutii\documents\visual studio 2015\projects\karya\karya\karya.winphone\obj\debug\intermediatexaml\karya.winphone.exe" HashGuid="559b4a35-9f57-9a6f-e0a7-8f67da458a6a" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\karya\karya\bin\debug\karya.dll" HashGuid="5923d5c4-da9e-2720-581a-01983b8e345e" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\microsoft.azure.mobile.client.3.0.3\lib\wpa81\microsoft.windowsazure.mobile.dll" HashGuid="b1dcaa97-cc41-a02d-c94f-f367893aa987" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\microsoft.azure.mobile.client.3.0.3\lib\wpa81\microsoft.windowsazure.mobile.ext.dll" HashGuid="37cc6169-576b-f3de-1e6a-600572f7c503" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\microsoft.azure.mobile.client.sqlitestore.3.0.3\lib\portable-win+net45+wp8+wpa81+monotouch10+monoandroid10+xamarinios10\microsoft.windowsazure.mobile.sqlitestore.dll" HashGuid="5ce242fd-987c-74e6-9623-a9532ec099a3" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\sqlite-net-pcl.1.2.0\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\sqlite-net.dll" HashGuid="3c0233d3-a12c-5ad7-a109-85a4ee4f8215" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\sqlitepclraw.bundle_green.1.0.1\lib\wpa81\sqlitepclraw.batteries_green.dll" HashGuid="39f21040-4875-6272-89df-7d99d9436971" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\sqlitepclraw.core.1.0.1\lib\wpa81\sqlitepclraw.core.dll" HashGuid="12bb6dd0-9804-44c3-6d3b-121df4841c11" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\sqlitepclraw.provider.e_sqlite3.wpa81.1.0.1\lib\wpa81\sqlitepclraw.provider.e_sqlite3.dll" HashGuid="ba7daee6-6137-6d02-e53e-8ad9f6183644" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
+    <ReferenceAssembly PathName="c:\users\shruti\documents\visual studio 2015\projects\karya\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

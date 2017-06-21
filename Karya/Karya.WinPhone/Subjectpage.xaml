@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Subjectpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="g1">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="4.5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="1" Margin="30,0,30,0" x:Name="Sublistbox" Loaded="Sublistbox_Loaded" Background="{x:Null}" SelectionChanged="Sublistbox_SelectionChanged" BorderThickness="0" FontSize="18">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                    <Grid Width="480" Margin="0">
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF63B651" Offset="0.507"/>
+                                <GradientStop Color="#FFE3E6E0" Offset="1"/>
+                                <GradientStop Color="#FFE3E6E0" Offset="0.017"/>
+                                <GradientStop Color="#FF84B878" Offset="0.319"/>
+                                <GradientStop Color="#FF84B878" Offset="0.701"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="SubnameTxt" TextWrapping="Wrap" Text="{Binding Subjectname}" FontSize="18" Foreground="#FFEE0B0B" FontWeight="Bold"/>
+                        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="18" Text="Subject Name:" Foreground="#FFEE0B0B" FontWeight="Bold" />
+                        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="18" Text="Teacher:" Foreground="#FFEE0B0B" FontWeight="Bold" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="teacherTxt" FontSize="18" TextWrapping="Wrap" Text="{Binding Teachername}" Foreground="#FFEE0B0B" FontWeight="Bold" />
+                        <TextBlock Grid.Row="2" Grid.Column="2" Text=">" FontSize="18" Margin="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#FFEE0B0B" FontWeight="Bold" />
+                        <TextBlock Grid.Row="2" Grid.Column="0" x:Name="SubidTxt" TextWrapping="Wrap" Text="{Binding Subjectid}" FontSize="18" Foreground="#FFEE0B0B" FontWeight="Bold"/>
+                        <TextBlock Grid.Row="3" Grid.Column="0" x:Name="UsridTxt" TextWrapping="Wrap" Text="{Binding Userid}" FontSize="18" Foreground="#FFEE0B0B" FontWeight="Bold"/>
+                    </Grid>
+
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Grid.Row="2" x:Name="button" Content="+" HorizontalAlignment="Stretch" Margin="30,10,30,0" VerticalAlignment="Stretch" Foreground="#FF131111" BorderBrush="{x:Null}" FontSize="36" Click="button_Click" Canvas.ZIndex="1">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="3" x:Name="delallsubbutton" Content="Delete All" HorizontalAlignment="Stretch" Margin="30,0,30,10" VerticalAlignment="Stretch" Foreground="#FF131313" Click="delallsubbutton_Click" RenderTransformOrigin="0.586,-5.169" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Row="0" x:Name="textBlock" Margin="30,50,30,20" TextWrapping="Wrap" Text="Subjects" FontSize="48" FontFamily="Bradley Hand ITC" TextAlignment="Center"/>
+
+
+    </Grid>
+</Page>

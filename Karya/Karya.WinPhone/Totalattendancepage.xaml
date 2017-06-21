@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Totalattendancepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="0.7*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textBlock" Margin="30,35,30,5" TextWrapping="Wrap" Text="Total Attendance" FontSize="24" TextAlignment="Center" FontFamily="Bradley Hand ITC"/>
+            <ComboBox x:Name="subcomboBox" Margin="30,15.5,30,0.833" Grid.Row="1" PlaceholderText="Subject" SelectionChanged="subcomboBox_SelectionChanged"/>
+            <TextBlock x:Name="textBlock1" Margin="30,51.667,270,289.833" Grid.Row="2" TextWrapping="Wrap" Text="Total Class " RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <TextBlock x:Name="textBlock1_Copy" Margin="30,107.667,235,230.833" Grid.Row="2" TextWrapping="Wrap" Text="Attended Class" RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <TextBlock x:Name="textBlock1_Copy1" Margin="30,166.667,235,180.833" Grid.Row="2" TextWrapping="Wrap" Text="Bunked Class" RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <TextBlock x:Name="totnmblk" Margin="235,76.667,100,289.833" Grid.Row="2" TextWrapping="Wrap" Text="" RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <TextBlock x:Name="atnmblk" Margin="235,135.667,100,230.833" Grid.Row="2" TextWrapping="Wrap" Text="" RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <TextBlock x:Name="bnknmblk" Margin="235,185.667,100,180.833" Grid.Row="2" TextWrapping="Wrap" Text="" RenderTransformOrigin="0.111,0.385" FontSize="18"/>
+            <Button x:Name="button" Content="Reset Subject Attendance" HorizontalAlignment="Stretch" Margin="30,10" Grid.Row="3" VerticalAlignment="Stretch" Foreground="#FF151515" BorderBrush="{x:Null}" FontSize="20" FontWeight="Bold" Click="button_Click">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>

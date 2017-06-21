@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Karya.WinPhone.SubjectTimetablepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <Grid Margin="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="Subnameblock" Margin="0" Grid.ColumnSpan="3" TextWrapping="Wrap" Text="" FontFamily="Bradley Hand ITC" FontSize="36"/>
+            <TextBlock x:Name="fileblock" HorizontalAlignment="Left" Margin="0,86.333,0,20" Grid.Row="1" TextWrapping="Wrap" Text="Files" FontSize="24" FontFamily="Bradley Hand ITC" Width="68" Grid.RowSpan="2"/>
+            <TextBlock x:Name="eventblock" HorizontalAlignment="Left" Margin="0,10,0,19.667" Grid.Row="3" TextWrapping="Wrap" Text="Events" FontFamily="Bradley Hand ITC" FontSize="24"/>
+            <TextBlock x:Name="attendanceblock" HorizontalAlignment="Left" Margin="0,10.333,0,19.333" Grid.Row="4" TextWrapping="Wrap" Text="Attendance" FontFamily="Bradley Hand ITC" FontSize="24"/>
+            <TextBlock x:Name="textBlock" Grid.Column="2" Margin="0,18,0,30" Grid.Row="2" TextWrapping="Wrap" Text="&gt;" FontSize="24" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="textBlock1" Grid.Column="2" Margin="0.333,18,0,30" Grid.Row="3" TextWrapping="Wrap" Text="&gt;" FontSize="24" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="textBlock1_Copy" Grid.Column="2" Margin="0.333,20,0,30" Grid.Row="4" TextWrapping="Wrap" Text="&gt;" FontSize="24" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="filenumblock" Grid.Column="1" Margin="49.167,29.667,41.667,44" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock"/>
+            <TextBlock x:Name="eventnumblock" Grid.Column="1" Margin="49.167,30,41.667,43.667" Grid.Row="3" TextWrapping="Wrap" Text="TextBlock"/>
+            <TextBlock x:Name="attndncenumblock" Grid.Column="1" Margin="49.167,30.333,41.667,42.333" Grid.Row="4" TextWrapping="Wrap" Text="TextBlock"/>
+
+        </Grid>
+
+    </Grid>
+</Page>
+

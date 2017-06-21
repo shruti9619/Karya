@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" Width="400" Margin="0,0.333,0,-0.333">
+        <Grid Height="1053" Width="398" Background="#FF37247A">
+            <Button x:Name="button" Content="Timetable&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,101,0,0" VerticalAlignment="Top" Height="62" Background="#FF2E8FF0"/>
+            <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="59,653,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="button1_Copy" Content="study material" HorizontalAlignment="Left" Margin="59,148,0,0" VerticalAlignment="Top" Background="#FFBFA299"/>
+            <Button x:Name="button1_Copy1" Content="Vocabtoday" HorizontalAlignment="Left" Margin="59,406,0,0" VerticalAlignment="Top" Background="#FF813A2F"/>
+            <Button x:Name="button1_Copy2" Content="remind me" HorizontalAlignment="Left" Margin="59,275,0,0" VerticalAlignment="Top" Background="#FF1DA623"/>
+            <Button x:Name="button1_Copy3" Content="click study pics" HorizontalAlignment="Left" Margin="59,207,0,0" VerticalAlignment="Top" BorderBrush="#FFD85A5A" Background="#FF7DBF46"/>
+            <Button x:Name="button1_Copy4" Content="Button" HorizontalAlignment="Left" Margin="59,783,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,7.895"/>
+            <Button x:Name="button1_Copy5" Content="Button" HorizontalAlignment="Left" Margin="59,875,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="button2" Content="my attndnce&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,468,0,0" VerticalAlignment="Top" Background="#FFADDE91"/>
+            <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="104,663,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="button4" Content="motivation&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,38,0,0" Background="#FFBD13D8"/>
+            <Button x:Name="button5" Content="doubtPokeChat&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,555,0,0" VerticalAlignment="Top" Background="#FFC53535"/>
+            <Button x:Name="button6" Content="about us" HorizontalAlignment="Left" Margin="59,343,0,0" VerticalAlignment="Top" Background="#FF17A2A2"/>
+        </Grid>
+    </ScrollViewer>
+
+</Page>

@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Insubjectpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Name="grid1">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <ListBox x:Name="sublistviewobj" Margin="20,108,20,194" Loaded="sublistviewobj_Loaded" Background="{x:Null}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="#FF3DC730" Width="480">
+                        <Border BorderBrush="White" BorderThickness="1">
+                            <Grid Height="80">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" x:Name="SubnameTxt" TextWrapping="Wrap" Text="{Binding subname}" FontSize="18" Foreground="White"/>
+                                <Image Grid.Row="0" Grid.Column="1" x:Name="image" Height="10"  Width="10" Source="{Binding icon}"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock x:Name="textBlockhead" Margin="30,40,30,570" TextWrapping="Wrap" Text="Manage Files in Subject" FontFamily="Bradley Hand ITC" FontSize="24" TextAlignment="Center"/>
+        <Grid Margin="21,493,10,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" MinHeight="57.5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" x:Name="button" Content="Edit " HorizontalAlignment="Stretch" Margin="30,0,30,-7.5" VerticalAlignment="Stretch" Click="button_Click" BorderBrush="{x:Null}" Foreground="#FF0F0F0F" Height="71.1666641235352" Style="{StaticResource ButtonStyle1}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="delsubbutton" Content="Delete Subject" HorizontalAlignment="Stretch" Margin="30,-0.833,30,0.833" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF131313" Click="delsubbutton_Click" Style="{StaticResource ButtonStyle1}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+
+
+    </Grid>
+</Page>

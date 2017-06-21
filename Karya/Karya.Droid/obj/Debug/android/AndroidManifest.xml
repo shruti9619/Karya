@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1" android:versionName="1.0" package="Karya.Droid">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="Karya" android:icon="@drawable/logopic" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Add Event" android:name="md5ca98a3c37bfd2115017cb40095e98d82.AddeventActivity" />
+    <activity android:label="Add Subject" android:name="md5ca98a3c37bfd2115017cb40095e98d82.AddSubjectActivity" />
+    <receiver android:name="md5ca98a3c37bfd2115017cb40095e98d82.AlarmReceiver" />
+    <activity android:label="Attendance" android:name="md5ca98a3c37bfd2115017cb40095e98d82.AttendanceActivity" />
+    <activity android:label="Events" android:name="md5ca98a3c37bfd2115017cb40095e98d82.EventActivity" />
+    <activity android:label="Home" android:name="md5ca98a3c37bfd2115017cb40095e98d82.HomeActivity" />
+    <activity android:label="Attendance Details" android:name="md5ca98a3c37bfd2115017cb40095e98d82.InattendanceActivity" />
+    <activity android:label="Event Details" android:name="md5ca98a3c37bfd2115017cb40095e98d82.IneventActivity" />
+    <activity android:label="Subject Details" android:name="md5ca98a3c37bfd2115017cb40095e98d82.InsubjectActivity" />
+    <activity android:icon="@drawable/icon" android:label="Karya" android:name="md5ca98a3c37bfd2115017cb40095e98d82.LoginActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/icon" android:label="Karya" android:name="md5ca98a3c37bfd2115017cb40095e98d82.MainActivity" />
+    <activity android:label="Click" android:name="md5ca98a3c37bfd2115017cb40095e98d82.ClickActivity" />
+    <activity android:label="Subjects" android:name="md5ca98a3c37bfd2115017cb40095e98d82.SubjectActivity" />
+    <activity android:label="Subjects Details" android:name="md5ca98a3c37bfd2115017cb40095e98d82.SubjectimetableActivity" />
+    <activity android:label="Timetable" android:name="md5ca98a3c37bfd2115017cb40095e98d82.TimetableActivity" />
+    <activity android:label="Total Attendance" android:name="md5ca98a3c37bfd2115017cb40095e98d82.TotalattendanceActivity" />
+    <activity android:label="VocabActivity" android:name="md5ca98a3c37bfd2115017cb40095e98d82.VocabActivity" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.WebAuthenticatorActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Karya.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Karya.Droid" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

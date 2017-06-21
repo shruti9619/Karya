@@ -1,0 +1,2 @@
+C:\Users\shrutii\documents\visual studio 2015\Projects\Karya\Karya\Karya.WinPhone\Karya.WinPhone.csproj;neutral
+C:\Users\shrutii\documents\visual studio 2015\Projects\Karya\Karya\Karya\Karya.csproj;neutral

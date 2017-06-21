@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Vocabpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <Grid Margin="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" x:Name="textBlock1" Margin="30,0" TextWrapping="Wrap" Text="Vocab  Box" FontSize="48" FontFamily="Bradley Hand ITC" TextAlignment="Center"/>
+            <TextBlock Grid.Row="1" x:Name="textBlock" HorizontalAlignment="Left" Margin="0,12,0,0" TextWrapping="Wrap" Text="Magic Word"  Width="130" FontSize="24" FontFamily="Bradley Hand ITC" LineHeight="6"/>
+            <TextBlock Grid.Row="2" x:Name="textBlock2" HorizontalAlignment="Left" Margin="0,30"  TextWrapping="Wrap" Text="Meaning" Width="130" FontSize="24" FontFamily="Bradley Hand ITC"/>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="0,60,0,18" Grid.Row="3" TextWrapping="Wrap" Text="Usage" FontSize="24" Width="130" FontFamily="Bradley Hand ITC"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="0,10.167,0,9.833" Grid.Row="4" TextWrapping="Wrap" Text="Synonym" FontSize="24" Width="130" FontFamily="Bradley Hand ITC"/>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="0,10.167,0,9.833" Grid.Row="5" TextWrapping="Wrap" Text="Antonym" FontSize="24" FontFamily="Bradley Hand ITC" Width="130"/>
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="0,10.167,0,9.667" Grid.Row="6" TextWrapping="Wrap" Text="Category" Width="130" FontSize="24" FontFamily="Bradley Hand ITC"/>
+            <RichTextBlock x:Name="magicwordblock" Margin="149,10.167,0,9.667" Grid.Row="1" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="magicwordblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock x:Name="meaningblock"  Margin="149,10.333,0,10.333" Grid.Row="2" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="meaningblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock x:Name="usageblock" Margin="149,9.667,0,10" Grid.Row="3" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="usageblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock x:Name="synonymblock" Margin="149,10,0,9.667" Grid.Row="4" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="synonymblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock x:Name="antonymblock" Margin="149,10,0,9.667" Grid.Row="5" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="antonymblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock x:Name="categoryblock" Margin="149,10,0,9.667" Grid.Row="6" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <Paragraph FontSize="24" FontFamily="Bradley Hand ITC" TextAlignment="Left">
+                    <Run x:Name="categoryblockpara" Text=""/>
+                </Paragraph>
+            </RichTextBlock>
+
+
+        </Grid>
+    </Grid>
+</Page>
+

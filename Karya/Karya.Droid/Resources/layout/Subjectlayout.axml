@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="@drawable/board45">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1"
+        p1:layout_marginBottom="30dp"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginRight="30dp"
+        p1:layout_marginTop="30dp">
+        <TextView
+            p1:text="Subjects"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:gravity="center_horizontal"
+            p1:textSize="44dp"
+            p1:textStyle="bold"
+            p1:typeface="monospace"
+            p1:layout_marginTop="20dp"
+            p1:layout_marginBottom="10dp" />
+        <ListView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="350dp"
+            p1:id="@+id/sublist"
+            p1:layout_marginBottom="10dp" />
+        <Button
+            p1:text="Add Subject"
+            p1:layout_width="match_parent"
+            p1:layout_height="45dp"
+            p1:id="@+id/subaddbut"
+            p1:layout_marginBottom="10dp"
+            p1:background="@drawable/pencil45"
+            p1:typeface="monospace"
+            p1:textSize="20dp"
+            p1:textStyle="bold" />
+        <Button
+            p1:text="Delete All Subjects"
+            p1:layout_width="match_parent"
+            p1:layout_height="45dp"
+            p1:id="@+id/delsubsbut"
+            p1:layout_marginTop="10dp"
+            p1:background="@drawable/pencil45"
+            p1:textStyle="bold"
+            p1:textSize="20dp"
+            p1:typeface="normal" />
+    </LinearLayout>
+</RelativeLayout>

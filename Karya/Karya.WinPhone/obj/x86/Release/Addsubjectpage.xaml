@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Karya.WinPhone.Addsubjectpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Karya.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Board45.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" Margin="20,30,20,542" TextWrapping="Wrap" Text="Add a new subject" FontSize="36"/>
+        <StackPanel Margin="30,103,30,94">
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Subject Name" Height="40" FontSize="24" Margin="0,0,0,20"/>
+            <TextBox x:Name="subjectnametext" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Stretch" PlaceholderText="Subject name" Height="50" FontSize="24"/>
+            <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Teacher Name" Height="40" FontSize="24" Margin="0,0,0,20"/>
+            <TextBox x:Name="teachernametext" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Stretch" Height="50" FontSize="24" PlaceholderText="Teacher name"/>
+            <Button x:ConnectionId='1' x:Name="addsubjectbutton" Content="Add" HorizontalAlignment="Stretch" Margin="0,10" VerticalAlignment="Stretch"                                Height="80" Foreground="#FF151414" BorderBrush="{x:Null}" FontFamily="Bradley Hand ITC" FontSize="20" Style="{StaticResource ButtonStyle1}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:ConnectionId='2' x:Name="button" Content="Cancel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF131212" Height="80" FontFamily="Bradley Hand ITC" FontSize="20" Margin="0,10,0,0"                      Style="{StaticResource ButtonStyle1}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Pencil45.png">
+                        <ImageBrush.RelativeTransform>
+                            <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="180"/>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Page>
+
